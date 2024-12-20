@@ -83,7 +83,7 @@ let burger = new BurgerBuilder()
 	.addToppings(['lettuce', 'tomato'])
 	.build();
 console.log(burger.describe());
-//TODO: test burgers
+
 /* ******************************************************************************************************************************** */
 
 interface IPerson {
