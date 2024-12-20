@@ -1,0 +1,14 @@
+{
+  "name": "scratch-capstone",
+  "version": "1.0.0",
+  "description": "Capstone Project from Scratch initialization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
