@@ -1,14 +1,35 @@
 {
-  "name": "scratch-capstone",
-  "version": "1.0.0",
-  "description": "Capstone Project from Scratch initialization",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.7.2"
-  }
+    "name": "scratch-capstone",
+    "version": "1.0.0",
+    "description": "Capstone Project from Scratch initialization",
+    "main": "index.ts",
+    "type": "module",
+    "scripts": {
+        "start": "webpack serve --mode development",
+        "build": "npm run lint && webpack --mode production",
+        "dev": "npm run lint && npm run format && webpack --watch & nodemon dist/bundle.js",
+        "lint": "eslint './src/**/*.{ts,js}'",
+        "lint:fix": "eslint './src/**/*.{ts,js}' --fix",
+        "format": "npx prettier . --write",
+        "check": "npx prettier . --check"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@eslint/js": "^9.17.0",
+        "eslint": "^8.57.1",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "9.1.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-prettier": "5.2.1",
+        "globals": "^15.14.0",
+        "nodemon": "^3.1.9",
+        "prettier": "3.4.2",
+        "ts-loader": "^9.5.1",
+        "typescript": "^5.7.2",
+        "typescript-eslint": "^8.18.1",
+        "webpack": "^5.97.1",
+        "webpack-cli": "^6.0.1",
+        "webpack-node-externals": "^3.0.0"
+    }
 }
